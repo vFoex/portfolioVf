@@ -1,0 +1,63 @@
+.main {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidenav {
+  width: 30%;
+  background-color: #4f5a4d;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidenav-top-div{
+  width: 200px;
+  margin: 5vh auto 0 auto;
+}
+
+.pp {
+  background-image: url("../../assets/images/pp.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.name{
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.link-icons{
+  display: flex;
+  margin-top: 1em;
+  justify-content: center;
+}
+
+.link-icon{
+  font-style: normal;
+  color: black;
+  margin: 0 1em;
+}
+
+.icon{
+  transform: scale(1.25);
+}
+
+.nav-links{
+  width: 100%;
+  margin-top: 1em;
+}
+
+.link{
+  text-align: center;
+  margin: 0 auto;
+}

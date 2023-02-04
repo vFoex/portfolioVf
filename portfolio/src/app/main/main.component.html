@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="sidenav">
+        <div class="sidenav-top-div">
+            <div class="pp"></div>
+
+            <h1 class="name">VALENTIN FOEX</h1>
+
+            <div class="link-icons">
+                <a class="link-icon" [href]="'https://www.linkedin.com/in/valentin-foex/'" target="_blank">
+                    <mat-icon svgIcon="linkedin" class="icon"></mat-icon>
+                </a>
+
+                <a class="link-icon" [href]="'https://github.com/vFoex'" target="_blank">
+                    <mat-icon svgIcon="github" class="icon"></mat-icon>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <h2 class="link"><a [routerLink]="['/']" routerLinkActive="active">{{'home' | translate}}</a></h2>
+            <h2 class="link"><a [routerLink]="['about']" routerLinkActive="active">{{'about' | translate}}</a></h2>
+            <h2 class="link"><a [routerLink]="['skills']" routerLinkActive="active">{{'skills' | translate}}</a></h2>
+            <h2 class="link"><a [routerLink]="['projects']" routerLinkActive="active">{{'projects' | translate}}</a></h2>
+            <h2 class="link"><a [routerLink]="['contact']" routerLinkActive="active">{{'contact' | translate}}</a></h2>
+        </div>
+    </div>
+
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
