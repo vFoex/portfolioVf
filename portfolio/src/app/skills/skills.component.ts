@@ -87,4 +87,22 @@ export class SkillsComponent implements OnInit {
     sg.skills.forEach(s => res += s.percentage);
     return res / sg.skills.length;
   }
+
+  openSkillGroup(sg: SkillGroup): void {
+    if(this.skillOpen) return;
+    // Extract sg from skillGroups and get index
+    const index = this.skillGroups.findIndex(s => s.name === sg.name);
+    // Set clicked to true
+    this.skillGroups[index].clicked = true;
+    this.skillOpen = true;
+  }
+
+  closeSkillGroup(sg: SkillGroup): void {
+    // Extract sg from skillGroups and get index
+    const index = this.skillGroups.findIndex(s => s.name === sg.name);
+    // Set clicked to false
+    this.skillGroups[index].clicked = false;
+    // Set skillOpen to false after 500ms
+    setTimeout(() => this.skillOpen = false, 1);
+  }
 }

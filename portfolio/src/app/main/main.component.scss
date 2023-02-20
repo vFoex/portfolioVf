@@ -14,8 +14,23 @@
 
 .content {
   width: 70%;
-  height: 100%;
   overflow: auto;
+  background: linear-gradient(-30deg, var(--third-color), var(--primary-color), var(--first-color));
+  background-size: 300% 300%;
+  animation: gradient 30s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .sidenav-top-div{
