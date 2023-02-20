@@ -1,0 +1,25 @@
+<div class="skills-div">
+  <ng-container *ngFor="let sg of skillGroups">
+    <div class="sg" *ngIf="!skillOpen || sg.clicked"
+         [style]="sg.clicked ? {} : {'background': 'linear-gradient(90deg, var(--text-color-light) ' + getSgPercentage(sg).toString() +
+       '%, var(--secondary-color) ' + getSgPercentage(sg).toString() + '%)'}" [ngClass]="sg.clicked ? 'sg-div-clicked' : 'skills-group-div'" (click)="openSkillGroup(sg)">
+
+
+      <h2 [ngClass]="sg.clicked ? 'sg-clicked-name' : 'skills-group-name'" [style]="sg.clicked ? {} : {'background': 'linear-gradient(90deg, var(--secondary-color) ' + getSgPercentage(sg).toString() + '%, var(--text-color)  ' + getSgPercentage(sg).toString() + '%)'}">{{sg.name}}</h2>
+
+      <div class="skills" *ngIf="sg.clicked">
+        <div class="skills-hidden-div">
+          <button mat-fab type="button" (click)="closeSkillGroup(sg)" *ngIf="skillOpen" class="mat-icon-button close-sg">
+            <mat-icon>close</mat-icon>
+          </button>
+          <div class="skill" *ngFor="let s of sg.skills" [style]="{'display' : sg.clicked ? 'block' : 'none'}">
+            <div class="skill-bar" [style]="{'background': 'linear-gradient(90deg, var(--background-color) ' + s.percentage.toString() + '%, var(--secondary-color) ' + s.percentage.toString() + '%)'}">
+              <h3 class="skill-name">{{s.name}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+</div>
