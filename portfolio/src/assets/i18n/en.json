@@ -7,5 +7,14 @@
   "developer": "Developer",
   "student": "Student",
   "welcome_text1": "Welcome to my portfolio !",
-  "welcome_text2": "My name is Valentin and I am a "
+  "welcome_text2": "My name is Valentin and I am a ",
+  "diplomas": "Diplomas",
+  "languages": "Languages",
+  "english_language": "English (fluent)",
+  "french_language": "French (native)",
+  "italian_language": "Italian (good)",
+  "korean_language": "Korean (beginner)",
+  "cpe_diplomas": "Software engineering degree in computer science and networks (2021 - 2024)",
+  "dut_diplomas": "University diploma in computer science (2019 - 2021)",
+  "bac_diplomas": "STI2D option SIN baccalaureate (2017 - 2019)"
 }

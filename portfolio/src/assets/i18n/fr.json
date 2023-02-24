@@ -7,5 +7,14 @@
   "developer": "Développeur",
   "student": "Étudiant",
   "welcome_text1": "Bienvenue sur mon portfolio !",
-  "welcome_text2": "Je m'appelle Valentin et je suis un "
+  "welcome_text2": "Je m'appelle Valentin et je suis un ",
+  "diplomas": "Diplômes",
+  "languages": "Langues",
+  "english_language": "Anglais C1",
+  "french_language": "Français natif",
+  "italian_language": "Italien B2",
+  "korean_language": "Coréen débutant",
+  "cpe_diplomas": "Diplômes d'ingénieur en informatique et réseaux de communication (2021 - 2024)",
+  "dut_diplomas": "Diplôme universitaire de technologie en informatique (2019 - 2021)",
+  "bac_diplomas": "Baccalauréat Sti2D option SIN (2018)"
 }

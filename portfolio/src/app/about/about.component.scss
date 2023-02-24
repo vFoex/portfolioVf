@@ -1,0 +1,41 @@
+.about-section{
+  height: 100vh;
+  display: flex;
+}
+
+.about-content{
+  margin: auto auto;
+  max-width: 800px;
+  padding: 18px;
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+}
+
+.about-content h3{
+  color: var(--primary-color);
+}
+
+.about-content p{
+  text-align: justify;
+}
+
+.table-div{
+  display: flex;
+  margin-top: 20px;
+}
+
+.table-div table{
+  margin: 0 5%;
+  width: 40%;
+  text-align: center;
+  border-collapse: collapse;
+
+}
+
+.table-div table *{
+  border: solid 1px var(--primary-color);
+}
+
+.table-div table th{
+  background-color: var(--primary-color);
+}
